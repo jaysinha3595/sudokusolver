@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #f6f6f6;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 120rem;
+    margin: 3.5rem auto;
+    background-color: #393e46;
+}
+
+header{
+    background-color: #95e1d3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 6rem;
+}
+
+.logo-box{
+    display: flex;
+}
+.logo{
+    align-self: center;
+    height: 3.5rem;
+}
+
+.logo-box p{
+    font-family: 'Lemonada', cursive;
+    margin-left: 1.6rem;
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.instructions{
+    height:90vh;
+}
+
+
+.board{
+    margin: 3.5rem auto 0;
+}
+
+.table{
+    margin: 0 auto;
+}
+
+td:first-child{
+    border-left: 1px solid black;
+}
+
+td:nth-child(3n){
+    border-right: 1px solid black;
+}
+
+tr:first-child td{
+    border-top: 1px solid black;
+}
+
+tr:nth-child(3n) td{
+    border-bottom: 1px solid black;
+}
+
+.cell{
+    font-family: 'Lemonada', cursive;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: none;
+    background-color: #fff;
+}
+
+.filled{
+    background-color: lightgrey;
+}
+
+.btn-div{
+    margin-top: 2.4rem;
+    display: flex;
+    justify-content: center;
+}
+.btn-div button{
+    text-transform: uppercase;
+    border: none;
+    padding: 1.6rem;
+    color: white;
+    cursor: pointer;
+    margin: 0 3.5rem 3.5rem;
+}
+
+.btn-div button::after{
+    border: none;
+}
+
+.solve{
+    background-color: #00adb5;
+    box-shadow: 0 2rem 2rem rgba(0,0,0,.4)
+}
+.new{
+    background-color: #00adb5;
+    box-shadow: 0 2rem 2rem rgba(0,0,0,.4)
+}
+
+
+.contact{
+    display: flex;
+    justify-content: center;
+}
+
+.contact div{
+    padding: 1.6rem;
+}
+
+.con-logo{
+    width: 16px;
+    height: 1.6rem;
+}
+.con-logo:hover{
+    position: relative;
+    top: -0.2rem;
+    transition: .2s;
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    background-color: #95e1d3;
+    padding: 3.5rem;
+    color: black;
+}
+
+footer p{
+    font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 630px){
+    .logo-box p{
+        font-size: 2.6rem;
+    }
+    .container{
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .logo-box p{
+        font-size: 2rem;
+    }
+    .contact div{
+        padding: 1rem;
+    }
+    header{
+        justify-content: space-between;
+    }
+    .logo-box{
+        margin-left: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .logo-box p{
+        font-size: 1.6rem;
+    }
+    .con-logo{
+        height: 1.2rem;
+    }
+
+    .btn-div button{
+        font-size: 1rem;
+    }
+
+    .cell{
+        height: 35px;
+        width: 35px;
+        font-size: 18px;
+    }
+    footer{
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .logo-box p{
+        font-size: 1.2rem;
+    }
+    .logo{
+        height: 2rem;
+    }
+
+    .cell{
+        height: 30px;
+        width: 30px;
+        font-size: 18px;
+    }
+}
